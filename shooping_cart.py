@@ -3,7 +3,7 @@ print(1)
 class ShoppingCart:
 	def __init__(self, max_size: int) -> None:
 		self.items = []
-		self.max_size = max_size
+		self.max_size = max_size + 1
 
 	def add(self, item: str):
 		if self.size() == self.max_size:
